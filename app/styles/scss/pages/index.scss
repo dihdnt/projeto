@@ -1,0 +1,195 @@
+.row{
+    margin:0; 
+}
+body{
+	font-size: 14px 
+}
+li{
+    list-style-type: none; 
+}
+#header{
+	background: url("images/banner1.jpg");
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height:700px;
+
+    #navgation{
+        width: 100%;
+        min-height: 30px;
+        background: $black;
+        #init{
+            font-size: 20px;
+            color: $white;
+            margin-top: 5px;
+            margin-left:30px;
+            font-family: $font-family; 
+        }
+    }
+    #navgation2 {
+        box-shadow: 1px 6px 3px -1px rgba(0,0,0,0.4);
+        position: relative ;
+        border-radius: 0;
+        width: 100%;
+        min-height: 60px;
+        background: $black2;
+    	.navbar-header{
+    		.navbar-brand{
+    			text-transform: uppercase;
+    			font-size: 2em;
+    			font-family:$font-family;
+    			font-weight: bold;
+    			text-decoration: none;
+    			color: $white;
+    		}
+    					}
+    		#navbar{
+    			.nav {
+    				li{
+    					padding:0;
+    					a{
+    					line-height: 30px;
+    					color: $white ;
+    					font-weight: bold;
+    					height: 60px;
+    					text-transform: uppercase;
+    				 &:hover, &:focus, &:active{
+    				 	background-color: $black;
+    				 }
+    				}
+    			}
+    		}
+    	}
+    }
+.intro{
+	h1{
+		color: $black;
+		font-weight: 100;
+		font-size: 4em; 
+		padding: 3em 0 0 0;
+	}
+}
+}
+#click-action{
+    box-shadow: 1px 6px 3px -1px rgba(0,0,0,0.4);
+    color: $white;
+    background: $black2;
+    #form{
+        margin: 30px 0 20px 15%; 
+    }
+        h2{
+            font-weight: 200; 
+            font-family: $font-family;
+            text-align:center;
+        }
+}.row {
+    margin-right: 0 !important;
+}
+.news{
+        margin-right: 0;
+    .calendario{
+        position: relative;
+        margin-top: 5px; 
+        text-align: center;
+        color: $white;
+        font-weight: 800;
+        font-family: $font-family;
+        .folha{
+        box-shadow: -4px 3px 6px 1px rgba(0,0,0,0.55);
+        }
+        .semana{
+            background: $cta;
+            margin: 10px 0 0 0;
+            padding: 5px 0 20px 0;
+        }
+        .dia{
+            background: $black;
+            padding: 5px 0 5px 0;
+        }
+    }
+    h2{
+            text-transform: uppercase;
+            color: $black; 
+            font-weight: 600;
+            font-family: $font-family;
+            text-align:center;
+       }
+       hr{
+               border: 1px solid $grey;
+       }
+       a{
+           color: $cta;
+           font-weight: 600;
+        &:hover, &:focus, &:active{
+            text-decoration: none;
+            color: $ctalink;
+       }
+   }
+    .panel-default{
+    border: none;
+    background: transparent;
+}
+.title-pannel{
+    }
+    font-family: $font-family;
+    h3{
+        margin: 0; 
+    }
+    h5{
+        font-weight: 600; 
+        margin: 0;
+        color: $cta; 
+    }
+    p{
+        font-weight: 500; 
+    }
+}
+.about{
+    h2{
+        color: $black; 
+        font-weight: 600;
+        font-family: $font-family;
+        text-align:center;
+        text-transform: uppercase;
+    }
+    hr{
+               border: 1px solid $grey;
+       }
+}
+
+.func{
+    .perfil{
+        padding-bottom: 30px;
+        background: $white;
+        border: 2px solid $black2;
+    }
+        margin-left: 35px;
+        text-align: center;
+        
+        p{
+            text-align: left;
+            margin:10px
+        }
+        a{
+           color: $cta;
+           font-weight: 600;
+           background-color: $white; 
+           border: 1px solid $black2;
+           padding: 8px;
+            border-radius:4px;
+        &:hover, &:focus, &:active{
+            background: $blue;
+            text-decoration: none;
+            color: $white;
+       }
+   }
+    h2{
+        margin: 5px 10px 2px 0;
+    }
+    img{
+        background: $grey;
+        // border: 1px solid;
+        border-radius: 5px;  
+    }
+}

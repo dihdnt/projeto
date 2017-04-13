@@ -1,0 +1,62 @@
+// Add your settings here
+@import "_variable";
+
+.btn-custom  {
+    font-family: $font-family;
+    background: $cta;
+    border: 2px solid $black !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important; 
+    color: $black2;
+    margin-left: 48%;
+    &:hover, &:focus, &:active {
+        font-weight: 600; 
+        background: $white;
+        opacity: 0.5;
+        border: 2px solid $black2;
+    }
+
+    &.white {
+        &:hover, &:focus, &:active {
+            background: $white;
+            opacity: 1;
+            color: $black;
+            border: 2px solid $black;
+        }
+    }
+}
+
+.btn-custom2  {
+    @extend .btn-custom;
+    background: $whiteAl;
+    margin-left: 0;
+    padding: 5px 15px !important;
+    color: $black;
+    &:hover, &:focus, &:active {
+        opacity: 1.0;
+        border: 2px solid $black;
+    }
+}
+
+.input-custom{
+    color: $black !important ;
+    background: $whiteAl !important;
+    border: 2px solid $black !important;
+    padding: 10px !important;
+    &:focus, &:active {
+        background: $white !important;
+        color: $black !important;
+        border: 2px solid $black !important;
+        box-shadow: none !important;
+    }
+}
+::-webkit-input-placeholder {
+   color: $black !important;
+   font-weight: bold !important;
+   font: 15px $font-family;
+}
+
+.panel-custom {
+    border: 2px solid $black2;
+    margin: 20px 100px 0px 150px;
+}
