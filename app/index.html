@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="//code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
     </head>
     <body>
     <header id="header">
@@ -20,66 +20,87 @@
             <span id="init" class="glyphicon glyphicon-phone" aria-hidden="true" > - (14)9 9999-9999</span>
             <span id="init" class="glyphicon glyphicon-map-marker" aria-hidden="true"> - Endereço</span>
         </nav>
-        <nav id="navgation2" class="navbar navbar-fixed-top">
-            <div class="container">
+
+        <nav id="navgation2" class="navbar-fixed-top" id="navbar">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="" class="navbar-brand">Marca</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" class="menu-teste">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Marca</a>
                 </div>
-                <div class="collapse navbar-collapse"  id="navbar" >
+            <div>
+               <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li><a href="">Quem Somos</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#section2">Sobre</a></li>
+                        <li><a href="#section1">Contato</a></li>
+                        <li><a href="#section3">Quem Somos</a></li>
                     </ul>
                 </div>
             </div>
+            </div>
         </nav>
+        <div class="bgcover"></div>
+        <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                </div>
+                <div class="item">
+                </div>
+                <div class="item">
+                </div>
+            </div>
+        </div>
 
-        <div class="container wow slideInDown">
-            <div class="col-xs-12 intro">
+        <div class="container wow slideInDown ">
+            <div class="col-xs-12 intro ">
                 <h1 class="text-center">Sejam bem vindos</h1>
                 <a id="cta1" href class="btn btn-large white btn-custom">Confira</a>
             </div>
 
         </div>
+        <div id="section1"></div>
     </header>
 
-    <section id="click-action">
+    <section  id="click-action">
     <form action="" method="POST" role="form">
-        <div class="row wow slideInLeft" >
+        <div class="row wow slideInLeft">
         <div class="container-fluid">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-md-12">
                 <h2 class="text-center testee">Precisa de ajuda? Nos diga seu Nome Telefone ou E-mail que entramos em contato</h2>
             </div>
             <div id="form" class="" >
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 form">
+                <div class="col-xs-3 col-md-3 form">
 
                     <input type="text" class="form-control input-custom" name="nome" placeholder="Nome">
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 form">
+                <div class="col-xs-3 col-md-3 form">
                     <input type="email" class="form-control input-custom" name="email" placeholder="Email">
                 </div>
-                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 form">
+                <div class="col-xs-3 col-md-3 form">
                     <input type="number" class="form-control input-custom" name="telefone" placeholder="Telefone">
                 </div>
                 <button type="submit" class="btn btn-custom2">Enviar</button>
             </div>
         </div>
-        </div>
     </form>
+    </div>
     </section>
-    <section>
+    <section id="section2">
     <div class="row news ">
         <div class="panel panel-default ">
             <div class="panel-body panel-custom">
                 <hr>
-                <h2>Notícias</h2>
+                <h2 >Notícias</h2>
                 <hr>
 
                 <!-- Primeira Notícia -->
                 <div class="wow fadeIn" data-wow-delay="1s">
-                    <div class="col-xs-2 col-md-1 col-md-offset-1 calendario">
+                    <div class="col-xs-3 col-md-1 col-md-offset-1 calendario">
                         <div class="folha">
                         <ul class="semana">
                             <li>SEG</li>
@@ -89,7 +110,7 @@
                         </ul>
                         </div>
                     </div>
-                    <div class="col-xs-10 col-md-9  title-pannel">
+                    <div class="col-xs-9 col-md-9  title-pannel">
                             <h3>Titulo</h3>
                             <h5>Autor</h5>
                             <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -106,7 +127,7 @@
 
             <!-- Segunda Notícia -->
             <div class="wow fadeIn" data-wow-delay="1s">
-                <div class="col-xs-2 col-md-1 col-md-offset-1 calendario">
+                <div class="col-xs-3 col-md-1 col-md-offset-1 calendario">
                             <div class="folha">
                             <ul class="semana">
                                 <li>DOM</li>
@@ -116,7 +137,7 @@
                             </ul>
                             </div>
                         </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 title-pannel">
+                        <div class="col-xs-9 col-md-9  title-pannel">
                                 <h3>Titulo</h3>
                                 <h5>Autor</h5>
                                 <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -134,7 +155,7 @@
         </div>
     </div>
     </section>
-    <section>
+    <section id="section3">
         <div class="row about">
                 <hr>
                     <h2>Quem somos nós</h2>
@@ -178,6 +199,9 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section>
     </section>
 
 
