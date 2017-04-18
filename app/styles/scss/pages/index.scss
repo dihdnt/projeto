@@ -10,7 +10,6 @@ li{
     list-style-type: none; 
 }
 #header{
-	background: url("mages/banner1.jpg");
 	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +19,7 @@ li{
         position: absolute;
         width: 100%;
         height: 670px;
-        background: rgba(0,0,0,0.5) url(http://1.bp.blogspot.com/-vez1u4pSAOE/UyvF0ksiYkI/AAAAAAAABdo/4M0M5C4kZs0/s1600/bgcover1.png);
+        background: rgba(0,0,0,0.5) url(/images/04.png)
         }
 
     #navgation{
@@ -34,7 +33,16 @@ li{
             color: $white;
             margin-top: 5px;
             margin-left:30px;
-            font-family: $font-family; 
+            font-family: $font-family;
+            .fa-whatsapp{
+                color: $Wats;
+            }
+            .fa-phone{
+                color: $blue;
+            }
+            .fa-map-marker{
+                color: $cta;
+            } 
         }
     }
     #navgation2 {
@@ -217,4 +225,70 @@ li{
     }
 }
 }
-
+.section4{
+    background: $black;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-family;
+        text-align: center;
+    h2{
+        padding: 0;
+        font-weight: 600;
+        margin-bottom: -15px;
+        }
+    ul{
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 600;
+        display: inline-block;
+        li{
+            text-align:left;
+        }
+    }
+    .fa-whatsapp{
+        color: $Wats;
+    }
+    .fa-phone{
+        color: $blue;
+    }
+    .fa-map-marker{
+        color: $cta;
+    }
+}
+.section5{
+    font-family: $font-family2;
+    text-align: center;
+    background: $black2;
+    margin: 0;
+    padding: 0;
+    p{
+        color: $grey;
+        margin: 0;
+        padding: 5px;
+    }
+    span{
+        margin-left: 10px;
+        
+    }
+    a{
+        font-family: $font-family2;
+        text-decoration: none;
+        
+        color: $grey;
+    &:hover, &:focus, &:active{
+    color: #FFF;
+        }
+    }
+}
+#googleMap{
+    height:170px;
+    text-align: center;
+    border: 2px solid $cta;
+}
+.titlemap{
+font-weight: 600;
+border-bottom: 1px solid;
+margin: 3px 0 4px 0;
+}

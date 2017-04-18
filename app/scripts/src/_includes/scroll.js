@@ -35,4 +35,3 @@ $(window).scroll(function(){
     }  // End if
   });
 });
-

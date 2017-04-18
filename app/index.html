@@ -7,18 +7,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="//code.jquery.com/jquery.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/4ff223c014.js"></script>
 
     </head>
     <body>
     <header id="header">
         <nav id="navgation">
-            <span id="init" class="glyphicon glyphicon-phone" aria-hidden="true" > - (14)9 9999-9999</span>
-            <span id="init" class="glyphicon glyphicon-map-marker" aria-hidden="true"> - Endereço</span>
+            <span id="init"><i class="fa fa-whatsapp" aria-hidden="true"></i> - (14) 9 9999 9999</span>
+            <span id="init"><i class="fa fa-phone" aria-hidden="true"></i> - (14) 9999 9999</span>
+            <span id="init"><i class="fa fa-map-marker" aria-hidden="true"></i> - Endereço - </span>
         </nav>
 
         <nav id="navgation2" class="navbar-fixed-top" id="navbar">
@@ -201,7 +204,52 @@
         </div>
     </section>
 
-    <section>
+    <section class="section4">
+        <footer>
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="col-xs-12 col-md-3">
+                            <h2>Marca</h2>
+                            <hr>
+                            <ul>
+                                <li><span><i class="fa fa-whatsapp" aria-hidden="true"></i> - (14) 9 9999 9999</span></li>
+                                <li><span><i class="fa fa-phone" aria-hidden="true"></i> - (14) 9999 9999</span></li>
+                                <li><span><i class="fa fa-map-marker" aria-hidden="true"></i> - Endereço - </span></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h2>reservado</h2>
+                            <br>
+                        </div>
+
+                        <div class="col-xs-12 col-md-5">
+                            <p class="titlemap">Onde estamos</p>
+                            <div id="googleMap"></div>
+                            <script>
+                            function myMap() {
+                              var myCenter = new google.maps.LatLng(-22.2211531,-49.9412438,21);
+                              var mapCanvas = document.getElementById("googleMap");
+                              var mapOptions = {center: myCenter, zoom: 18};
+                              var map = new google.maps.Map(mapCanvas, mapOptions);
+                              var marker = new google.maps.Marker({position:myCenter});
+                              marker.setMap(map);
+                            }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Q4-9ACXjhIb4rxHWzWhhSuQd9qUQkzI&callback=myMap"></script>
+
+                        </div>
+
+                    </div>
+                </div>
+        </footer>
+    </section>
+    <section class="section5">
+        <div class="cop">
+            <p>&copy; FeDiDo - 2017 - 
+            <span><i class="fa fa-whatsapp" aria-hidden="true"></i> - (14) 9 9999 9999</span>
+            <span><i class="fa fa-phone" aria-hidden="true"></i> - (14) 9999 9999</span>
+            <span><a href="" class="fa fa-facebook-square" aria-hidden="true"> www.facebook.com.br</span></a>
+        </div>
     </section>
 
 
