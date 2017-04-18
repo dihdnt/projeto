@@ -1,3 +1,5 @@
+html{
+}
 .row{
     margin:0; 
 }
@@ -8,7 +10,7 @@ li{
     list-style-type: none; 
 }
 #header{
-	background: url("/images/banner1.jpg");
+	background: url("mages/banner1.jpg");
 	background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,6 +107,7 @@ li{
 }
 .news{
         margin-right: 0;
+        background: $white;
     .calendario{
         position: relative;
         margin-top: 5px; 
@@ -162,7 +165,10 @@ li{
         font-weight: 500; 
     }
 }
+#section3{
+    background: $white;
 .about{
+    background: $white;
     h2{
         color: $black; 
         font-weight: 600;
@@ -209,5 +215,6 @@ li{
         // border: 1px solid;
         border-radius: 5px;  
     }
+}
 }
 

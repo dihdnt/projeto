@@ -217,5 +217,24 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/src/wow/dist/wow.js"></script>
         <script>new WOW().init();</script>
+
+        <script>
+  $(function() {
+    $('body').vegas({
+  overlay: true,
+  transition: 'fade', 
+  transitionDuration: 4000,
+  delay: 10000,
+  color: 'red',
+  animation: 'random',
+  animationDuration: 20000,
+  slides: [
+    { src: '/images/banner1.jpg' },
+    { src: '/images/banner2.jpg' },
+    { src: '/images/banner3.jpg' },
+    //{ src: 'https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?fit=crop&fm=jpg&h=600&q=75&w=1600' }
+  ]
+    });
+});</script>
     </body>
 </html>
