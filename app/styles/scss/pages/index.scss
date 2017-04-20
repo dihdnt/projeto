@@ -1,37 +1,39 @@
 html{
+    width: 100%;
+}
+body{
+    overflow-x:hidden !important;
 }
 .row{
     margin:0; 
 }
 body{
-	font-size: 14px 
+    font-size: 14px;
+        
 }
 li{
-    list-style-type: none; 
+    list-style-type: none;
 }
+/* INICIO BACKGROUD */
 #header{
-	background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
     min-height:700px;
     .bgcover {
+        z-index: -1;
         position: absolute;
         width: 100%;
-        height: 670px;
+        height: 700px;
         background: rgba(0,0,0,0.5) url(/images/04.png)
         }
-
+/* FIM BACKGROUD */
+/* Inicio NAVBAR 1*/
     #navgation{
-        z-index: 2;
         position: relative;
         width: 100%;
-        min-height: 30px;
+        
         background: $black;
         #init{
             font-size: 20px;
             color: $white;
-            margin-top: 5px;
             margin-left:30px;
             font-family: $font-family;
             .fa-whatsapp{
@@ -45,11 +47,11 @@ li{
             } 
         }
     }
+}
+/* Fim NAVBAR 1*/
+/* Incio NAVBAR 2 - Fixa*/
     #navgation2 {
         box-shadow: 1px 6px 3px -1px rgba(0,0,0,0.4);
-        position: relative ;
-        border-radius: 0;
-        width: 100%;
         min-height: 60px;
         background: $black2;
         .navbar-header{
@@ -82,13 +84,13 @@ li{
     					text-transform: uppercase;
     				 &:hover, &:focus, &:active{
     				 	background-color: $black;
-    				 }
     				}
-    			}
+    				}
+    			 }
     		}
     	}
     }
-
+/* Inicio mensgem de boas vindas */
 .intro{
 	h1{
 		color: $white;
@@ -97,32 +99,52 @@ li{
 		padding: 3em 0 0 0;
 	}
 }
-}
+/* Final mensagem de boas vindas */
+/* Inicio Contato */
 #click-action{
+    position: relative;
     box-shadow: 1px 6px 3px -1px rgba(0,0,0,0.4);
     color: $white;
     background: $black2;
-    #form{
-        margin: 30px 0 20px 15%; 
+    font-family: $font-family2;
+    position: relative;
+    z-index: 1;
+    .form{
+        margin: 0 0 20px 0;
     }
+        button{
+            margin-left: 50px;
+        }
         h2{
-            font-weight: 200; 
-            font-family: $font-family;
             text-align:center;
         }
-}.row {
+}
+/* Inicio Painel de noticias */
+.row {
     margin-right: 0 !important;
 }
+    h2{
+            text-transform: uppercase;
+            color: $black; 
+            font-weight: 600;
+            font-family: $font-family2;
+            text-align:center;
+       }
 .news{
+       
         margin-right: 0;
         background: $white;
+       hr{
+               border: 1px solid $grey;
+       }
+/* Formatação dos calendarios*/
     .calendario{
         position: relative;
         margin-top: 5px; 
         text-align: center;
         color: $white;
         font-weight: 800;
-        font-family: $font-family;
+        font-family: $font-family2;
         .folha{
         box-shadow: -4px 3px 6px 1px rgba(0,0,0,0.55);
         }
@@ -136,16 +158,25 @@ li{
             padding: 5px 0 5px 0;
         }
     }
-    h2{
-            text-transform: uppercase;
-            color: $black; 
-            font-weight: 600;
-            font-family: $font-family;
-            text-align:center;
-       }
-       hr{
-               border: 1px solid $grey;
-       }
+    .panel{
+    border: none;
+    }
+    .panel-default{
+    border: none;
+}
+}
+/* Final da fortação dos calendarios */
+/* Area central do painel de noticias */
+.title-pannel{
+    font-family: $font-family2;
+    h3{
+        margin: 0; 
+    }
+    h5{
+        font-weight: 700; 
+        margin: 0;
+        color: $cta; 
+    }
        a{
            color: $cta;
            font-weight: 600;
@@ -154,33 +185,17 @@ li{
             color: $ctalink;
        }
    }
-    .panel-default{
-    border: none;
-    background: transparent;
 }
-.title-pannel{
-    }
-    font-family: $font-family;
-    h3{
-        margin: 0; 
-    }
-    h5{
-        font-weight: 600; 
-        margin: 0;
-        color: $cta; 
-    }
-    p{
-        font-weight: 500; 
-    }
-}
+/*Final Area central do painel de noticias */
+/* Incio "Quem somos nós" */
 #section3{
     background: $white;
+        font-family: $font-family2;
+/* Chamada "QUEM SOMOS NOS" */
 .about{
-    background: $white;
     h2{
         color: $black; 
         font-weight: 600;
-        font-family: $font-family;
         text-align:center;
         text-transform: uppercase;
     }
@@ -188,16 +203,16 @@ li{
                border: 1px solid $grey;
        }
 }
-
+/* Final Chamada */
+/* Card funcionarios */
 .func{
+        margin-left: 35px;
+        text-align: center;
     .perfil{
         padding-bottom: 30px;
         background: $white;
-        border: 2px solid $black2;
+        border: 1px solid $black2;
     }
-        margin-left: 35px;
-        text-align: center;
-        
         p{
             text-align: left;
             margin:10px
@@ -209,23 +224,27 @@ li{
            border: 1px solid $black2;
            padding: 8px;
             border-radius:4px;
-        &:hover, &:focus, &:active{
+        &:hover, &:focus &:active{
             background: $blue;
             text-decoration: none;
             color: $white;
        }
    }
+   /* Final Card Funcionarios */
     h2{
         margin: 5px 10px 2px 0;
     }
     img{
         background: $grey;
-        // border: 1px solid;
+        /* border: 1px solid; */
         border-radius: 5px;  
     }
 }
 }
+/* Inicio Footer */
 .section4{
+    position: relative;
+    z-index: 1;
     background: $black;
     width: 100%;
     height: 100%;
@@ -257,6 +276,18 @@ li{
         color: $cta;
     }
 }
+#googleMap{
+    height:170px;
+    text-align: center;
+    border: 2px solid $cta;
+}
+.titlemap{
+font-weight: 600;
+border-bottom: 1px solid;
+margin: 3px 0 4px 0;
+}
+/* Final footer */
+/* Marca de criação */
 .section5{
     font-family: $font-family2;
     text-align: center;
@@ -282,13 +313,4 @@ li{
         }
     }
 }
-#googleMap{
-    height:170px;
-    text-align: center;
-    border: 2px solid $cta;
-}
-.titlemap{
-font-weight: 600;
-border-bottom: 1px solid;
-margin: 3px 0 4px 0;
-}
+/* Final Marca de criação */
