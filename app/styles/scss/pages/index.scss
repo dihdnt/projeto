@@ -101,6 +101,12 @@ li{
 }
 /* Final mensagem de boas vindas */
 /* Inicio Contato */
+    #thankyou_message{
+        display: none;
+    }
+    #email-invalid{
+        visibility:hidden;
+    }
 #click-action{
     position: relative;
     box-shadow: 1px 6px 3px -1px rgba(0,0,0,0.4);
@@ -111,6 +117,17 @@ li{
     z-index: 1;
     .form{
         margin: 0 0 20px 0;
+    }
+    .form2{
+        width: 200px;
+        color: $black !important ;
+        background: $whiteAl !important;
+        border: 2px solid $black !important;
+        margin-bottom: 8px;
+        p{
+            display: inline-flex;
+            margin: 0 5px 5px 5px;
+            }
     }
         button{
             margin-left: 50px;
@@ -131,7 +148,6 @@ li{
             text-align:center;
        }
 .news{
-       
         margin-right: 0;
         background: $white;
        hr{

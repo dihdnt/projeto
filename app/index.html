@@ -69,27 +69,41 @@
         </header>
         <section  id="click-action">
             <div class="container">
-                <form action="" method="POST" role="form">
+            <div class="row">
+                <form id="gform" action="https://script.google.com/macros/s/AKfycbxFVo7dEAXUUX-3YGrcnsumsaDfg_tFPlBwHmcQRd02h2TFe3Re/exec" method="POST" role="form">
                     <div class="row wow slideInLeft">
-                    <div class="container-fluid">
                         <div class="col-xs-12 col-md-12">
-                            <h2 class="text-center testee">Precisa de ajuda? Nos diga seu Nome Telefone ou E-mail que entramos em contato</h2>
+                            <h2 class="text-center">Precisa de ajuda? Nos diga seu Nome Telefone ou E-mail que entramos em contato</h2>
                         </div>
-                        <div id="form" class="geralform" >
-                            <div class="col-xs-12 col-md-3 form col-md-offset-1">
+                        <div id="form" class="geralform">
+                            
+                            <fieldset class="col-xs-12 col-md-3 form">
                                 <input type="text" class="form-control input-custom" name="nome" placeholder="Nome">
-                            </div>
+                            </fieldset>
+
                             <div class="col-xs-12 col-md-3 form">
                                 <input type="email" class="form-control input-custom" name="email" placeholder="Email">
+                                <span id="email-invalid">
+                                        Coloque um E-mail válido</span>
                             </div>
+
                             <div class="col-xs-9 col-md-3 form">
-                                <input type="number" class="form-control input-custom" name="telefone" placeholder="Telefone">
+                                <input type="text" class="form-control input-custom" name="telefone" placeholder="Telefone">
                             </div>
-                            <button type="submit" class="btn btn-custom2">Enviar</button>
                         </div>
+                            <button class="btn btn-custom2">Enviar</button>
                     </div>
+                        <div class="col-xs-12 col-md-9 col-sm-offset-6 wow slideInLeft form2">
+                            <h4>Assunto</h4>
+                            <input type="checkbox" name="tipo" value="Trabalhista"><p>Trabalhista </p>
+                            <input type="checkbox" name="tipo" value="Civil"><p>Civil </p>
+                            <input type="checkbox" name="tipo" value="Outros"><p> Outros </p>
+                        </div>
                 </form>
             </div>
+            <div id="thankyou_message">
+                <h2><em>Obrigado</em> por entrar em contato. Vamos te ligar em breve!</h2>
+              </div>
         </section>
         <section id="section2">
             <div class="row news">
@@ -387,23 +401,30 @@
             <script src="scripts/src/wow/dist/wow.js"></script>
             <script>new WOW().init();</script>
 
+
+            <script data-cfasync="false" type="text/javascript"
+            src="scripts/src/_includes/email.js"></script>
+
+
             <script>
-      $(function() {
-        $('body').vegas({
-      overlay: true,
-      transition: 'fade', 
-      transitionDuration: 4000,
-      delay: 10000,
-      color: 'red',
-      animation: 'random',
-      animationDuration: 20000,
-      slides: [
-        { src: '/images/banner1.jpg' },
-        { src: '/images/banner2.jpg' },
-        { src: '/images/banner3.jpg' },
-        //{ src: 'https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?fit=crop&fm=jpg&h=600&q=75&w=1600' }
-      ]
-        });
-    });</script>
+                  $(function() {
+                    $('body').vegas({
+                  overlay: true,
+                  transition: 'fade', 
+                  transitionDuration: 4000,
+                  delay: 10000,
+                  color: 'red',
+                  animation: 'random',
+                  animationDuration: 20000,
+                  slides: [
+                    { src: '/images/banner1.jpg' },
+                    { src: '/images/banner2.jpg' },
+                    { src: '/images/banner3.jpg' },
+                    //{ src: 'https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?fit=crop&fm=jpg&h=600&q=75&w=1600' }
+                  ]
+                    });
+                });
+        </script>
+    
     </body>
 </html>
